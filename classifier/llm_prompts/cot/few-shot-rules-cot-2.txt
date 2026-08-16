@@ -1,0 +1,106 @@
+You are an expert privacy/security classifier and summarizer for mobile app reviews.
+
+Classify whether the following app review discusses privacy or security points related to the app and generate relevant summaries if applicable.
+
+Label "Yes" only if the review discusses privacy or security points (can be positive or negative).
+Label "No" if the review does not discuss any privacy or security points.
+If labelled "Yes", generate the privacy/security summaries mentioned in the review with a maximum of 4 words each summary. If labelled "No" set privacy/security summaries to an empty array.
+
+
+Rules:
+Label "Yes" if the review mentions the following topics (including but not limited to):
+- Surveillance, tracking, or monitoring of user activity
+- Forced disclosure or interrogation for personal information
+- Data collection, aggregation, or gathering from multiple sources
+- Insecurity or inadequate protection of personal data
+- Identification issues or anonymity concerns
+- Use of data for unexpected purposes
+- Exclusion from accessing or correcting personal information
+- Breach of confidentiality or data leaks
+- Unauthorized disclosure or exposure of personal data
+- Increased accessibility of private data to public or third parties
+- Data blackmailing issue
+- Appropriation, or exploitation of user data
+- Distortion or presentation of false information about users
+- Intrusion into personal information or private life
+- Government or decisional interference in user's life
+- Ability to opt out of data collection
+- Excessive data collection beyond what's needed (data minimization issues)
+- Unclear purpose specification for data access
+- Too much personal data is collected
+- The data is being used for unexpected purposes
+- Onward transfer or sharing with third parties
+- Lack of choice, consent, or control over personal data
+- Permissions and access requests
+- Security threats (malware, viruses, malicious activity, phishing)
+- Identity theft or stealing of personal information
+- Positive privacy/security features (e.g., strong encryption)
+
+Label "No" for all other reviews (including but not limited to):
+- UI/UX issues (e.g., navigation problems, layout complaints, design preferences)
+- Performance issues (e.g., crashes, slow app, freezing, lag, bugs)
+- Feature requests (e.g., "Please add a dark mode", "Need offline mode")
+- General functionality or usability complaints unrelated to privacy/security
+- Customer service or support issues
+- General positive/negative opinions without privacy/security context
+
+
+Output Format (JSON):
+{
+  "Privacy/security related": "<Yes/No>",
+  "Privacy/security summaries": ["<List of privacy/security summaries if applicable, otherwise leave empty>"]
+}
+
+Before reaching the final decision think step by step as shown in the examples.
+
+Examples:
+
+Example 1: the name of the mobile application is Mindbody: Fitness & Wellness. Classify and summarize the following mobile app review accordingly: Why does the update need access to photos on my phone and saved externally? Why are my personal memories necessary to booking yoga classes?
+
+Let's do this step by step.
+
+Step 1: Extract the privacy/security related parts of the review, if any.
+
+The review mentions: "access to photos on my phone and saved externally" and "personal memories necessary to booking yoga classes".
+
+Step 2: Determine if the extracted parts refer to the app’s actual privacy or security practices, rather than unrelated contexts such as app features, gameplay elements, or topics not directly related to the app itself.
+
+The review specifically questions the necessity of accessing personal photos for the app's functionality, indicating a concern about privacy/security practices.
+
+Step 3: Based on the analysis, classify the review and generate summaries.
+
+Since the review discusses privacy/security related to photo access, we classify it as "Yes".
+
+Privacy/security summaries: 1- "Photo access necessity" (4 words maximum).
+
+Output Format (JSON):
+{
+  "Privacy/security related": "Yes",
+  "Privacy/security summaries": ["Photo access necessity"]
+}
+
+Example 2: the name of the mobile application is Hotel Hideaway: Avatar & Chat. Classify and summarize the following mobile app review accordingly: i love this app i wished you made more rooms and robot dances. nd more outfits and privacy for you and that person. and a Radio where u can put ur own music in. that would be rare and sick. and speakers. hey game creator please see this the game u made is sick. add some of my ideas people will Love it even biggo. and bigger speakers and a Big place with a nice veiw of your choice imagen that making the hotel amazing and secret rooms we love that. we love more detail too its a perfect game.
+
+Let's do this step by step.
+
+Step 1: Extract the privacy/security related parts of the review, if any.
+
+The review mentions: "more outfits and privacy for you and that person".
+
+Step 2: Determine if the extracted parts refer to the app’s actual privacy or security practices, rather than unrelated contexts such as app features, gameplay elements, or topics not directly related to the app itself.
+
+The review's mention of "privacy for you and that person" appears to be a general wish for privacy game features rather than a specific concern about the app's privacy/security practices.
+
+Step 3: Based on the analysis, classify the review and generate summaries.
+
+Since the review does not discuss specific privacy/security practices of the app, we classify it as "No".
+
+Privacy/security summaries: []
+
+Output Format (JSON):
+{
+  "Privacy/security related": "No",
+  "Privacy/security summaries": []
+}
+
+Now, the name of the mobile application is [$NAME$]. Classify and summarize the following mobile app review accordingly: [$REVIEW$]

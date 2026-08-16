@@ -1,0 +1,123 @@
+Privacy Concept Hypotheses
+
+Concepts from Solove's Taxonomy
+
+Surveillance
+The user is facing a data surveillance issue.
+
+Interrogation
+The user is forced to provide information.
+
+Aggregation
+Personal user information is collected from other sources.
+
+Insecurity
+The user is concerned about protecting their personal data.
+
+Identification
+A data anonymity topic is discussed.
+
+Secondary Use
+The user is concerned about the purposes of personal data access.
+
+Exclusion
+The user wants to correct their personal information.
+
+Breach of Confidentiality
+A breach of data confidentiality is discussed.
+
+Disclosure
+Personal data disclosure is discussed.
+
+Exposure
+The app exposes a private aspect of the user life.
+
+Increased Accessibility
+User's data has been made accessible to public.
+
+Blackmail
+A data blackmailing issue is discussed.
+
+Appropriation
+User data is being exploited for other purposes.
+
+Distortion
+False data is presented about the user.
+
+Intrusion
+Unwanted intrusion to personal info is discussed.
+
+Decisional Interference
+Intrusion by the government to the user's life is discussed.
+
+Concepts from Wang and Kobsa's Taxonomy
+
+Notice/Awareness
+Opting out from personal data collection is discussed.
+
+Data Minimization
+More access than needed is required.
+
+Purpose Specification
+The reason for data access is not provided.
+
+Collection Limitation
+Too much personal data is collected.
+
+Use Limitation
+The data is being used for unexpected purposes.
+
+Onward Transfer
+Data sharing with third parties is discussed.
+
+Choice/Consent
+User choice for personal data collection is discussed.
+User did not allow access to their personal data.
+
+Generic Privacy Concepts
+
+Generic Privacy Issues
+A data privacy topic is discussed.
+Protecting user's personal data is discussed.
+This is about a privacy feature.
+The user is facing a privacy issue.
+
+Positive Privacy Issues
+The user likes that data privacy is provided.
+The user wants privacy.
+The app has privacy features
+
+reference: https://sranimeshs.github.io/publication/hark/hark.pdf
+
+
+Privacy/Security
+Keywords
+
+Privacy
+Security
+Safe
+Secure
+Permission
+Identity
+Personal
+Virus
+Malware
+Malicious
+Access
+Fishy
+Phishing
+Fishing
+Stealth
+Steal
+Thief
+Creepy
+
+reference: https://arxiv.org/pdf/2010.06371
+
+
+Privacy/Security
+General keywords
+
+permission, access, intrusive, identity, personal info, malware, virus, malicious
+
+reference: https://publications.cispa.saarland/2815/1/main_sp.pdf

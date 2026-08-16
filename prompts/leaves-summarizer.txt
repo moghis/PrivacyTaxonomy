@@ -1,0 +1,19 @@
+You are a precise summarization assistant. Given the following list of labels from user reviews, generate a concise summary that captures the main themes and key points.
+Guidelines:
+- The summary should be 2-3 words long.
+- It is ok if the summary cannot cover all the child labels, just try your best.
+- Always output valid JSON with a single summary string.
+
+Output Format (JSON):
+{
+    "summary": "<concise summary>"
+}
+
+Example 1: Generate the concise summary, given the following list of labels: download failure; game download error; installetion failed; cannot download game; download error.
+
+Output Format (JSON):
+{
+    "summary": "download issues"
+}
+
+Now, generate the concise summary, given the following list of labels: [$LABELS$].

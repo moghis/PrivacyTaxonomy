@@ -1,0 +1,35 @@
+You are a hierarchical taxonomy generator. Given the following list of child labels, generate a concise parent label that semantically encompasses all the given children.
+
+Guidelines:
+- The parent label should capture the shared theme or category of all child labels.
+- The parent label should be 2-3 words long.
+- Avoid repeating exact child terms.
+- Use professional, domain-relevant terminology (e.g., "Translation Technologies" instead of "Translation stuff").
+- Do not use too general topics like "natural language processing". Use labels that are more specific to the child labels.
+
+Output Format (JSON):
+{
+    "parent_label": "<concise parent label>"
+}
+
+Example 1: Generate the parent label for the following list of child labels: neural translation; statistical translation; machine translation.
+
+Output Format (JSON):
+{
+    "parent_label": "translation"
+}
+
+Example 2: Generate the parent label for the following list of child labels: object detection; image classification; semantic segmentation.
+
+Output Format (JSON):
+{
+    "parent_label": "computer vision"
+}
+
+Example 3: Generate the parent label for the following list of child labels: speech recognition; voice command; spoken language understanding.
+Output Format (JSON):
+{
+    "parent_label": "speech processing"
+}
+
+Now, generate the parent label for the following list of child labels: [$LABELS$].
